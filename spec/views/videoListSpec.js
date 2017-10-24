@@ -6,6 +6,7 @@ describe('VideoListView', function() {
     sinon.spy(VideoListEntryView.prototype, 'render');
 
     collection = new Videos(fakeVideoData);
+    // console.log(fakeVideoData, "fake Video data");
     view = new VideoListView({ collection: collection });
   });
 
