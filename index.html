@@ -31,9 +31,11 @@
   <script src="src/views/videoPlayer.js"></script>
 
   <script>
-    
     backboneReady(() => {
-      new AppView().render();//added .render()
+      Videos.prototype.search.call(null, 'dogs');
+      // var movies = new Videos(exampleVideoData);
+      
+      // new AppView({collection: movies}).render();//added .render()
     });
   </script>
 
